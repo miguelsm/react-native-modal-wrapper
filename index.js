@@ -167,7 +167,7 @@ export default class ModalWrapper extends Component {
       </TouchableWithoutFeedback>}
       {modal}
     </View>;
-    const keyboardSpacer = Platform.OS === 'ios' && <KeyboardSpacer />;
+    const keyboardSpacer = Platform.OS === 'ios' && <KeyboardSpacer screenHeight={this.props.screenHeight} />;
     const nativeModal = <Modal
         visible={isVisible}
         {...nativeModalProps}>
